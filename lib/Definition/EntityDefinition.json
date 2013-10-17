@@ -120,9 +120,8 @@
 		"model"			: "Volkszaehler\\Model\\Channel",
 		"hasConsumption"	: true,
 		"translation"		: {
-			"de" : "Strommesser",
-			"en" : "Electric Meter",
-			"fr" : "Compteur de courant"
+			"de" : "Elektrische Leistung (S0-Impulse)",
+			"en" : "Electric Power (s0-pulses)"
 		}
 	},
 	{
@@ -135,9 +134,8 @@
 		"model"			: "Volkszaehler\\Model\\Channel",
 		"hasConsumption"	: true,
 		"translation"		: {
-			"de" : "Stromsensor",
-			"en" : "Electric Sensor",
-			"fr" : "Capteur de courant"
+			"de" : "Elektrische Leistung (Leistungswerte)",
+			"en" : "Electric Power (power readings)"
 		}
 	},
 	{
@@ -151,8 +149,23 @@
 		"model"			: "Volkszaehler\\Model\\Channel",
 		"hasConsumption"	: true,
 		"translation"		: {
-			"de" : "Stromzaehler",
-			"en" : "Electric Meter"
+			"de" : "Elektrische Leistung (Zaehlerstaende)",
+			"en" : "Electric Power (absolute meter readings)"
+		}
+	},		
+	{
+		"name" : "electric meter readings",
+		"required"		: ["resolution"],
+		"optional" : ["tolerance", "cost", "local"],
+		"icon"			: "bolt.png",
+		"unit"			: "Wh",
+		"interpreter"		: "Volkszaehler\\Interpreter\\SensorInterpreter",
+		"style"			: "lines",
+		"model"			: "Volkszaehler\\Model\\Channel",
+		"hasConsumption"	: true,
+		"translation"		: {
+			"de" : "Stromzaehlerstand",
+			"en" : "Electric Energy Meter Readings"
 		}
 	},		
 	{
